@@ -1,0 +1,23 @@
+PODS:
+  - RouterStateMachine (0.1.0):
+    - SwiftyCollection
+  - SwiftyCollection (1.0.0)
+
+DEPENDENCIES:
+  - RouterStateMachine (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftyCollection
+
+EXTERNAL SOURCES:
+  RouterStateMachine:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RouterStateMachine: b354e49acdf2847b2ab5e5b211b3dbc47d55a85c
+  SwiftyCollection: 7f708298ca501d0aa280e03b1d3e56b553ebabea
+
+PODFILE CHECKSUM: 0550767676084b73e822a05f71e98686fd0399f3
+
+COCOAPODS: 1.5.0
