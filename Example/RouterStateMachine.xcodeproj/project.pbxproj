@@ -17,6 +17,9 @@
 		891F74E621055C8B00C6DDAB /* SimpleStateMachineTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F74E521055C8B00C6DDAB /* SimpleStateMachineTestCases.swift */; };
 		891F74E821055CAB00C6DDAB /* SimpleStateMachineTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F74E721055CAB00C6DDAB /* SimpleStateMachineTester.swift */; };
 		891F74EA21055EEF00C6DDAB /* MockStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F74E921055EEF00C6DDAB /* MockStateProvider.swift */; };
+		89EB577B21056A6A00249BB3 /* SyncronizedStateMachineTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB577A21056A6A00249BB3 /* SyncronizedStateMachineTestCases.swift */; };
+		89EB577E2105765300249BB3 /* SyncronizedStateMachineTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB577C2105762900249BB3 /* SyncronizedStateMachineTester.swift */; };
+		89EB57802105785000249BB3 /* SyncDelegateProxyTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB577F2105785000249BB3 /* SyncDelegateProxyTester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		891F74E521055C8B00C6DDAB /* SimpleStateMachineTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStateMachineTestCases.swift; sourceTree = "<group>"; };
 		891F74E721055CAB00C6DDAB /* SimpleStateMachineTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStateMachineTester.swift; sourceTree = "<group>"; };
 		891F74E921055EEF00C6DDAB /* MockStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStateProvider.swift; sourceTree = "<group>"; };
+		89EB577A21056A6A00249BB3 /* SyncronizedStateMachineTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncronizedStateMachineTestCases.swift; sourceTree = "<group>"; };
+		89EB577C2105762900249BB3 /* SyncronizedStateMachineTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncronizedStateMachineTester.swift; sourceTree = "<group>"; };
+		89EB577F2105785000249BB3 /* SyncDelegateProxyTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncDelegateProxyTester.swift; sourceTree = "<group>"; };
 		9B55940D371E79A7F9468CF6 /* Pods-RouterStateMachine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterStateMachine_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouterStateMachine_Example/Pods-RouterStateMachine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A7348242313BCD087923DFB0 /* Pods-RouterStateMachine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterStateMachine_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RouterStateMachine_Tests/Pods-RouterStateMachine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88745DC6081E6B4524CCBB7 /* Pods-RouterStateMachine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouterStateMachine_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RouterStateMachine_Tests/Pods-RouterStateMachine_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 				891F74E721055CAB00C6DDAB /* SimpleStateMachineTester.swift */,
 				891F74E421055C8B00C6DDAB /* RouterStateMachine_Tests-Bridging-Header.h */,
 				891F74E921055EEF00C6DDAB /* MockStateProvider.swift */,
+				89EB577A21056A6A00249BB3 /* SyncronizedStateMachineTestCases.swift */,
+				89EB577C2105762900249BB3 /* SyncronizedStateMachineTester.swift */,
+				89EB577F2105785000249BB3 /* SyncDelegateProxyTester.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -343,7 +352,10 @@
 			files = (
 				891F74E821055CAB00C6DDAB /* SimpleStateMachineTester.swift in Sources */,
 				891F74EA21055EEF00C6DDAB /* MockStateProvider.swift in Sources */,
+				89EB577E2105765300249BB3 /* SyncronizedStateMachineTester.swift in Sources */,
+				89EB577B21056A6A00249BB3 /* SyncronizedStateMachineTestCases.swift in Sources */,
 				891F74E621055C8B00C6DDAB /* SimpleStateMachineTestCases.swift in Sources */,
+				89EB57802105785000249BB3 /* SyncDelegateProxyTester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

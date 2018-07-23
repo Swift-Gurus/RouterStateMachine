@@ -11,7 +11,6 @@ import XCTest
 
 class SimpleStateMachineTestCases: XCTestCase {
     
-    
     var tester: SimpleStateMachineTester!
     override func setUp() {
         super.setUp()
@@ -22,6 +21,22 @@ class SimpleStateMachineTestCases: XCTestCase {
         tester.pushState(.two)
         tester.checkProviderWasCalledToMove(toStates: [.two])
         tester.checkDelegateProxyWasCalledToMove(toStates: [.two])
+        tester.checkDelegateProxyWasCalledErrorMoving(toStates: [])
+    }
+    
+    func test_push_unallowed_state() {
+        tester.pushState(.three)
+        tester.checkProviderWasCalledToMove(toStates: [.three])
+        tester.checkDelegateProxyWasCalledToMove(toStates: [])
+        tester.checkDelegateProxyWasCalledErrorMoving(toStates: [.three])
+    }
+    
+    func test_pop_last_state() {
+        tester.pushState(.two)
+        tester.popLastState()
+        tester.checkProviderWasCalledToMove(toStates: [.two,.one])
+        tester.checkDelegateProxyWasCalledToMove(toStates: [.two,.one])
+        tester.checkDelegateProxyWasCalledErrorMoving(toStates: [])
     }
     
 }

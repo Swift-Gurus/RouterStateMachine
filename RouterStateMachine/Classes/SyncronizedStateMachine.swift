@@ -9,16 +9,18 @@ import Foundation
 
 public final class SyncronizedMachineDelegateProxy<T> {
     var syncWillMove: SyncronizedWillMove<T>?
+    var errorMoving: StateMachineWillMoveCallback<T>?
 }
 
 public typealias SyncronizedWillMove<T> = (_ toState: T, _ fromState: T, _ completion: @escaping () -> Void) -> Void
 
 public final class  SyncronizedStateMachine<Provider: StateProvider>: StateMachine {
     public typealias T = Provider.T
-    private let simpleStateMachine: SimpleStateMachine<Provider>
     public var delegateProxy: SyncronizedMachineDelegateProxy<T>?
-    var shouldWait = false
-    var blockedNewStates: [() -> Void] = []
+    private let simpleStateMachine: SimpleStateMachine<Provider>
+    
+    private var shouldWait = false
+    private var blockedNewStates: [() -> Void] = []
     
    public  init(initialState: T, roadMapProvider: Provider) {
         simpleStateMachine =  SimpleStateMachine<Provider>.init(initialState: initialState, roadMapProvider: roadMapProvider)
@@ -47,9 +49,9 @@ public final class  SyncronizedStateMachine<Provider: StateProvider>: StateMachi
         })
     }
     
-    
     func errorMoving(from: T, to: T) {
         shouldWait = false
+        delegateProxy?.errorMoving?(from, to)
         processNextBlockedStates()
     }
     

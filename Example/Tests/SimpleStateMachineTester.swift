@@ -24,6 +24,9 @@ final class DelegateProxyTester {
     private(set) var fromStates: [MockState] = []
     private(set) var toStates: [MockState] = []
     
+    private(set) var errorFromStates: [MockState] = []
+    private(set) var errorToStates: [MockState] = []
+    
     var proxy: StateMachineDelegateProxy<MockState> {
         let proxy = StateMachineDelegateProxy<MockState>()
         proxy.willMoveCallback = self.willMove
@@ -37,8 +40,8 @@ final class DelegateProxyTester {
     }
     
     func errorMoving(from state: MockState, toState to: MockState) {
-        fromStates.append(state)
-        toStates.append(to)
+        errorFromStates.append(state)
+        errorToStates.append(to)
     }
 }
 
@@ -59,6 +62,10 @@ final class SimpleStateMachineTester {
         machineToTest.pushState(state)
     }
     
+    func popLastState() {
+        machineToTest.popLastState()
+    }
+    
     func checkProviderWasCalledToMove(toStates states: [MockState],
                                       file: StaticString = #file,
                                       line: UInt = #line) {
@@ -70,5 +77,13 @@ final class SimpleStateMachineTester {
                                            line: UInt = #line) {
         
         XCTAssertEqual(proxyTester.toStates, states, file: file, line: line)
+    }
+    
+    
+    func checkDelegateProxyWasCalledErrorMoving(toStates states: [MockState],
+                                                file: StaticString = #file,
+                                                line: UInt = #line) {
+        
+        XCTAssertEqual(proxyTester.errorToStates, states, file: file, line: line)
     }
 }

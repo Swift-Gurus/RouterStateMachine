@@ -18,7 +18,6 @@ public protocol StateMachine {
     func popLastState()
 }
 
-
 public protocol StateProvider {
     associatedtype T where T: State
     func canMove(fromState state: T, toState to: T) -> Bool
@@ -34,10 +33,11 @@ public typealias StateMachineWillMoveCallback<T> = (_ toState: T, _ fromState: T
 
 public class SimpleStateMachine<Provider: StateProvider>: StateMachine {
     public typealias T = Provider.T
-    fileprivate let roadMapProvider: Provider
-    private var states: [T] = []
-    fileprivate let initialState: T
     public var delegateProxy: StateMachineDelegateProxy<T>?
+    
+    private let roadMapProvider: Provider
+    private var states: [T] = []
+    private let initialState: T
     
     public init(initialState: T,
          roadMapProvider: Provider) {
@@ -85,78 +85,5 @@ public class SimpleStateMachine<Provider: StateProvider>: StateMachine {
     
     func errorMoving(fromState state: T, toState to: T) {
         delegateProxy?.errorMoving?(state, to)
-        debugPrint("\(Date()) Cannot move from state: \(state) to state \(to) on main: \(Thread.isMainThread)")
     }
 }
-
-
-//
-//enum ComplexState: State {
-//    var uniqueID: String {
-//        switch self {
-//        case .initial: return "initial"
-//        case .userInfo: return "userInfo"
-//        case .userLogIn: return "userLogIn"
-//        }
-//    }
-//
-//    case initial
-//    case userInfo(String)
-//    case userLogIn(String, String)
-//}
-//
-//
-//struct ComplexStateProvider: StateProvider {
-//    typealias T = ComplexState
-//    func canMove(fromState state: ComplexState, toState to: ComplexState) -> Bool {
-//        switch (state,to) {
-//        case (.initial,.userInfo),
-//             (.userInfo,.initial),
-//             (.userInfo,.userLogIn),
-//             (.userLogIn,.userInfo): return true
-//        default: return false
-//        }
-//    }
-//}
-//
-//
-//
-//class Router {
-//
-//    let machine = SyncronizedStateMachine(initialState: .initial, roadMapProvider: ComplexStateProvider())
-//
-//
-//
-//    init() {
-//        let proxy = SyncronizedMachineDelegateProxy<ComplexState>()
-//        proxy.syncWillMove = { [weak self] in self?.willMove(fromState: $0, toState: $1, completion: $2) }
-//        machine.delegateProxy = proxy
-//
-//    }
-//
-//    func willMove(fromState state: ComplexState,
-//                  toState to: ComplexState,
-//                  completion: @escaping () -> Void) {
-//        switch (state, to) {
-//        case (.initial, .userInfo),
-//             (.userInfo, .initial),
-//             (.userInfo, .userLogIn),
-//             (.userLogIn, .userInfo):
-//            completion()
-//            debugPrint("\(Date()) Moved from \(state) to \(to) on main: \(Thread.isMainThread)")
-//        default: break
-//        }
-//    }
-//
-//    func moveToUserInfo() {
-//        machine.pushState(.userInfo("USER"))
-//    }
-//
-//    func movetToLogIn() {
-//        machine.pushState(.userLogIn("USER", "PSWD"))
-//    }
-//
-//    func pop() {
-//        machine.popLastState()
-//    }
-//}
