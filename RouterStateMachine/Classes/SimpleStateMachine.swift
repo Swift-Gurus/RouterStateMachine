@@ -27,6 +27,12 @@ public protocol StateProvider {
 public final class StateMachineDelegateProxy<T> {
     public var willMoveCallback: StateMachineWillMoveCallback<T>?
     public var errorMoving: StateMachineWillMoveCallback<T>?
+    
+    public init(willMoveCallback: StateMachineWillMoveCallback<T>?,
+                errorMoving: StateMachineWillMoveCallback<T>?) {
+        self.willMoveCallback = willMoveCallback
+        self.errorMoving = errorMoving
+    }
 }
 
 public typealias StateMachineWillMoveCallback<T> = (_ toState: T, _ fromState: T) -> Void

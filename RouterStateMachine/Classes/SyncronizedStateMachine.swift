@@ -8,8 +8,14 @@
 import Foundation
 
 public final class SyncronizedMachineDelegateProxy<T> {
-    var syncWillMove: SyncronizedWillMove<T>?
-    var errorMoving: StateMachineWillMoveCallback<T>?
+    public var syncWillMove: SyncronizedWillMove<T>?
+    public var errorMoving: StateMachineWillMoveCallback<T>?
+    
+    public init(syncWillMove: SyncronizedWillMove<T>? = nil,
+                errorMoving: StateMachineWillMoveCallback<T>? = nil) {
+        self.syncWillMove = syncWillMove
+        self.errorMoving = errorMoving
+    }
 }
 
 public typealias SyncronizedWillMove<T> = (_ toState: T, _ fromState: T, _ completion: @escaping () -> Void) -> Void
