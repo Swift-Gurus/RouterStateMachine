@@ -28,8 +28,8 @@ public final class StateMachineDelegateProxy<T> {
     public var willMoveCallback: StateMachineWillMoveCallback<T>?
     public var errorMoving: StateMachineWillMoveCallback<T>?
     
-    public init(willMoveCallback: StateMachineWillMoveCallback<T>?,
-                errorMoving: StateMachineWillMoveCallback<T>?) {
+    public init(willMoveCallback: StateMachineWillMoveCallback<T>? = nil,
+                errorMoving: StateMachineWillMoveCallback<T>? = nil) {
         self.willMoveCallback = willMoveCallback
         self.errorMoving = errorMoving
     }
