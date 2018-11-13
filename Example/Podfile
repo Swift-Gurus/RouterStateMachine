@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'RouterStateMachine_Example' do
+  pod 'RouterStateMachine', :path => '../'
+
+  target 'RouterStateMachine_Tests' do
+    inherit! :search_paths
+  end
+end
