@@ -79,22 +79,22 @@
 		5626EFB41ED32218FF802BDC9D5E87E8 /* RouterStateMachine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RouterStateMachine.modulemap; sourceTree = "<group>"; };
 		6887284033CC185DAE948C5976AF9C70 /* Pods-RouterStateMachine_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RouterStateMachine_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6B2A5CEC73A4AF8F6A53F6D33E1DD660 /* Pods-RouterStateMachine_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RouterStateMachine_Example-dummy.m"; sourceTree = "<group>"; };
-		6B4487EBF1A0BE4A747D058EFBC8F4CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6B4487EBF1A0BE4A747D058EFBC8F4CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7FD21C308BACA2991DDF7EFE3C03CC94 /* Pods-RouterStateMachine_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouterStateMachine_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		867745D645E3F9C08C3C49C220836C98 /* Pods-RouterStateMachine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterStateMachine_Example.release.xcconfig"; sourceTree = "<group>"; };
 		867DB40AFF4AB1A963C007C75D8E6FD4 /* CollectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionExtensions.swift; path = SwiftyCollection/Classes/CollectionExtensions.swift; sourceTree = "<group>"; };
-		8AB782255A446B09D9D83678E4CD6261 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8AB782255A446B09D9D83678E4CD6261 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		90663A5E9867E4DA7F4876B361CE709D /* Pods-RouterStateMachine_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouterStateMachine_Example-resources.sh"; sourceTree = "<group>"; };
 		9390F4873F896827CE175DDC8217E823 /* SwiftyCollection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCollection.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97CC846964CC6D45651B85896073BC3E /* SwiftyCollection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCollection-prefix.pch"; sourceTree = "<group>"; };
 		98690429B62F7A1865322057AB88F259 /* Pods-RouterStateMachine_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouterStateMachine_Tests-resources.sh"; sourceTree = "<group>"; };
-		9D157E07A998771DF7893ED99260708C /* RouterStateMachine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RouterStateMachine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3453B46F29E851D05DE078C2C9CD2DB /* RouterStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RouterStateMachine.framework; path = RouterStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D157E07A998771DF7893ED99260708C /* RouterStateMachine.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RouterStateMachine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3453B46F29E851D05DE078C2C9CD2DB /* RouterStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouterStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC268E3380D20396767125C82B63E22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C119FF002153D8006D3AB36F2BFAC35C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4ED04E9033BF3D7D446DAC9ECF75251 /* Pods-RouterStateMachine_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouterStateMachine_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		CCF72E7176BCAD8E698F7635A6BB405F /* SwiftyCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyCollection.framework; path = SwiftyCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF72E7176BCAD8E698F7635A6BB405F /* SwiftyCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDED11DB14428FAAB1F56909BB3F0743 /* SwiftyCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyCollection.modulemap; sourceTree = "<group>"; };
 		CE10804D9A72624BBC15633F58008254 /* RouterStateMachine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouterStateMachine.xcconfig; sourceTree = "<group>"; };
 		D1B9D0211359A5222F69A0817069A522 /* Pods-RouterStateMachine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterStateMachine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		E8DAD0F70CF170F274B0F3BB7B65C744 /* MutableCollectionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableCollectionExtensions.swift; path = SwiftyCollection/Classes/MutableCollectionExtensions.swift; sourceTree = "<group>"; };
 		EEA95E37AAE2CF1560647E22CA11B068 /* Pods-RouterStateMachine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterStateMachine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8C9BBDD4AF1942E0590AFA12C90423 /* RouterStateMachine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouterStateMachine-dummy.m"; sourceTree = "<group>"; };
-		F57F416959A146BB2122A7839EE8DBA2 /* Pods_RouterStateMachine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RouterStateMachine_Example.framework; path = "Pods-RouterStateMachine_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F66121190F808944B2DD02F3133EC232 /* Pods_RouterStateMachine_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RouterStateMachine_Tests.framework; path = "Pods-RouterStateMachine_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57F416959A146BB2122A7839EE8DBA2 /* Pods_RouterStateMachine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouterStateMachine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66121190F808944B2DD02F3133EC232 /* Pods_RouterStateMachine_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouterStateMachine_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8E808664E41C0A5797F77458177642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,7 +223,6 @@
 				3557B6380CFCC963B52565196FEA6B25 /* RangeReplaceableCollectionExtensions.swift */,
 				6D1D4D6DBC55C21497C3C20107ECD971 /* Support Files */,
 			);
-			name = SwiftyCollection;
 			path = SwiftyCollection;
 			sourceTree = "<group>";
 		};
@@ -426,6 +425,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					1F01B94A4E27FA6B8702CD346A3C88F3 = {
+						LastSwiftMigration = 1010;
+					};
+					354E7A4B4742B1CB632CBFEA78D7E9B1 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -670,7 +677,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -766,7 +773,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -799,7 +806,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -833,7 +840,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
