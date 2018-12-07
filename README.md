@@ -14,15 +14,15 @@ The framework provides 2 different state machines `SimpleStateMachine` and `Sync
 final class MockStateProvider: StateProvider {
 typealias T = MockState
 
-func canMove(fromState state: MockState, toState to: MockState) -> Bool {
-  switch (state, to) {
-    case (.one, .two),
-    (.two, .three),
-    (.two, .one),
-    (.three,. two): return true
-    default: return false
+  func canMove(fromState state: MockState, toState to: MockState) -> Bool {
+    switch (state, to) {
+      case (.one, .two),
+      (.two, .three),
+      (.two, .one),
+      (.three,. two): return true
+      default: return false
+    }
   }
-}
 
 }
 ```
