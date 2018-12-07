@@ -14,19 +14,14 @@ The framework provides 2 different state machines `SimpleStateMachine` and `Sync
 final class MockStateProvider: StateProvider {
 typealias T = MockState
 
-private(set) var fromStates: [MockState] = []
-private(set) var toStates: [MockState] = []
-
 func canMove(fromState state: MockState, toState to: MockState) -> Bool {
-fromStates.append(state)
-toStates.append(to)
-switch (state, to) {
-case (.one, .two),
-(.two, .three),
-(.two, .one),
-(.three,. two): return true
-default: return false
-}
+  switch (state, to) {
+    case (.one, .two),
+    (.two, .three),
+    (.two, .one),
+    (.three,. two): return true
+    default: return false
+  }
 }
 
 }
@@ -35,20 +30,20 @@ default: return false
 - Create Delegate proxy to listen when a change / error happens. Here in the example the delegate proxy is wrapped into separate class. However it cab be anyclass that responsible to do action based on state change. For example Router that is responsible for Navigation
 ```swift
 final class DelegateProxyTester {
-var proxy: StateMachineDelegateProxy<MockState> {
-let proxy = StateMachineDelegateProxy<MockState>()
-proxy.willMoveCallback = self.willMove
-proxy.errorMoving = self.errorMoving
-return proxy
+  var proxy: StateMachineDelegateProxy<MockState> {
+  let proxy = StateMachineDelegateProxy<MockState>()
+  proxy.willMoveCallback = self.willMove
+  proxy.errorMoving = self.errorMoving
+  return proxy
 }
 
-func willMove(from state: MockState, toState to: MockState) {
-//do the logic based on state change
-}
+  func willMove(from state: MockState, toState to: MockState) {
+  //do the logic based on state change
+  }
 
-func errorMoving(from state: MockState, toState to: MockState) {
-//process the error
-}
+  func errorMoving(from state: MockState, toState to: MockState) {
+    //process the error
+  }
 }
 ```
 
@@ -67,20 +62,20 @@ To use it follow the step above with the difference that you need to provide dif
 ```swift
 final class SyncDelegateProxyTester {
 
-var proxy: SyncronizedMachineDelegateProxy<MockState> {
-let proxy = SyncronizedMachineDelegateProxy<MockState>()
-proxy.syncWillMove = willMove
-proxy.errorMoving = errorMoving
-return proxy
-}
+  var proxy: SyncronizedMachineDelegateProxy<MockState> {
+    let proxy = SyncronizedMachineDelegateProxy<MockState>()
+    proxy.syncWillMove = willMove
+    proxy.errorMoving = errorMoving
+    return proxy
+  }
 
-func willMove(from state: MockState, toState to: MockState, completion: @escaping () -> Void) {
-//do the logic and when it's finished call completion
-}
+  func willMove(from state: MockState, toState to: MockState, completion: @escaping () -> Void) {
+  //do the logic and when it's finished call completion
+  }
 
-func errorMoving(from state: MockState, toState to: MockState) {
-// process the error if need
-}
+  func errorMoving(from state: MockState, toState to: MockState) {
+    // process the error if need
+    }
 }
 ```
 
@@ -99,4 +94,4 @@ ALDO Inc., aldodev@adogroup.com
 
 ## License
 
-EZSource is available under the MIT license. See the LICENSE file for more info.
+RouterStateMachine is available under the MIT license. See the LICENSE file for more info.
