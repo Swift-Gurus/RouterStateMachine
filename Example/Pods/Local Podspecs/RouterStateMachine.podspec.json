@@ -2,22 +2,23 @@
   "name": "RouterStateMachine",
   "version": "0.1.0",
   "summary": "A short description of RouterStateMachine.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/AlexHmelevski/RouterStateMachine",
+  "description": "The class that represents StateMachine patternt for Routers objects that are used in the concept of\nUseCases/Viper/Clean Architechture",
+  "homepage": "https://github.com/aldo-dev/RouterStateMachine",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "AlexHmelevski": "alexei.hmelevski@gmail.com"
+    "ALDO Inc.": "aldodev@aldogroup.com"
   },
   "source": {
-    "git": "https://github.com/AlexHmelevski/RouterStateMachine.git",
+    "git": "https://github.com/aldo-dev/RouterStateMachine.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "11.0"
   },
+  "swift_version": "4.2",
   "source_files": "RouterStateMachine/Classes/**/*",
   "dependencies": {
     "SwiftyCollection": [
