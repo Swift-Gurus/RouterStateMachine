@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -46,7 +46,7 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "354E7A4B4742B1CB632CBFEA78D7E9B1"
+            BlueprintIdentifier = "29A5A178AC05C61200CCBFC1545AB3CB"
             BuildableName = "RouterStateMachine.framework"
             BlueprintName = "RouterStateMachine"
             ReferencedContainer = "container:Pods/Pods.xcodeproj">
