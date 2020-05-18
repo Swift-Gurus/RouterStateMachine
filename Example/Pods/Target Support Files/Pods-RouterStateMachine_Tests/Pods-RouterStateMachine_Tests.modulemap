@@ -1,6 +1,0 @@
-framework module Pods_RouterStateMachine_Tests {
-  umbrella header "Pods-RouterStateMachine_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

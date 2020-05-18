@@ -1,6 +1,0 @@
-framework module RouterStateMachine {
-  umbrella header "RouterStateMachine-umbrella.h"
-
-  export *
-  module * { export * }
-}
