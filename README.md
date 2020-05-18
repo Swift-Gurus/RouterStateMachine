@@ -1,6 +1,6 @@
 # RouterStateMachine
 
-[![CircleCI](https://circleci.com/gh/aldo-dev/mfind.svg?style=svg)](https://circleci.com/gh/aldo-dev/RouterStateMachine)
+[![Build Status](https://app.bitrise.io/app/f390d0ad9d2d05dc/status.svg?token=vs0J1Qi3GkPwmCC1KfaADg&branch=master)](https://app.bitrise.io/app/f390d0ad9d2d05dc)
 [![Version](https://img.shields.io/cocoapods/v/EZSource.svg?style=flat)](https://cocoapods.org/pods/RouterStateMachine)
 [![License](https://img.shields.io/cocoapods/l/EZSource.svg?style=flat)](https://cocoapods.org/pods/RouterStateMachine)
 [![Platform](https://img.shields.io/cocoapods/p/EZSource.svg?style=flat)](https://cocoapods.org/pods/RouterStateMachine)
